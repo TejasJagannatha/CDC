@@ -2,12 +2,12 @@
 # -----
 # Author
 # Tejas Jagannatha
-
 #Connect me on Linkedin: https://www.linkedin.com/in/tejas-jagannatha-450559147/
 # ------
 
 import time, pyperclip, os, datetime
-print('Set Working Directory where you want results to store: ')
+directory= input(r'Set Working Directory where you want results to store:')
+os.chdir(directory)
 print('*' * 10)
 print('Thanks for Cloning me: ')
 
@@ -23,9 +23,6 @@ def copy():
 def write_todb(data):
     with open('critical_data_copied.txt', 'a') as file:
         file.write(data + '\n')
-
-#print("Hit any key to Start, I am tracking your progress and check here for critical datas: ", path)
-#inp= input("")
 
 for i in range(0, 4):
     print('.')
